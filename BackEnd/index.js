@@ -1,26 +1,22 @@
-const express = require("express");
-const dotenv = require("dotenv");
-const cors = require("cors");
-const fileUpload = require("express-fileupload");
+const express = require("express")
+const dotenv = require("dotenv")
+dotenv.config()
+dotenv.connect()
 
-dotenv.config();
-
-const app = express();
-const PORT = process.env.PORT || 4000;
-
-app.use(express.json());
+app.use(express.json())
 app.use(
-    cors({
-        origin: "*",
-        credentials: true,
-    })
+	cors({
+		origin: "*",
+		credentials: true,
+	})
 );
 app.use(
-    fileUpload({
-        useTempFiles: true,
-        tempFileDir: "/tmp/",
-    })
+	fileUpload({
+		useTempFiles: true,
+		tempFileDir: "/tmp/",
+	})
 );
+
 
 app.get("/", (req, res) => {
     return res.json({
@@ -30,5 +26,11 @@ app.get("/", (req, res) => {
 });
 
 app.listen(PORT, () => {
-    console.log(`Port ${PORT} Running`);
-});
+    return res.json({
+        success: true,
+        message:"Port 4000 Running",
+    })
+
+
+    
+})
