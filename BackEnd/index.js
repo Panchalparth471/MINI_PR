@@ -29,8 +29,13 @@ app.get("/", (req, res) => {
 
 // Start the server
 app.listen(PORT, () => {
+<<<<<<< HEAD
+    console.log(`App is listening at port ${PORT}`)
+})
+=======
     console.log(`App is listening at port ${PORT}`);
 });
 
 // Connect to database using the connect method
 database.connect();
+>>>>>>> origin/main
