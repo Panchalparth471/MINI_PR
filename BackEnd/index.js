@@ -15,8 +15,8 @@ const PORT = process.env.PORT || 4000;
 app.use(
   cors({
     origin: [
-      "https://mini-a1ejs8d6f-nilays-projects-c34e98cc.vercel.app/",
-      "https://mini-pr-ivory.vercel.app/"// Your Vite development server
+      "https://mini-a1ejs8d6f-nilays-projects-c34e98cc.vercel.app",
+      "https://mini-pr-ivory.vercel.app"// Your Vite development server
     ],
     credentials: true,
   })
