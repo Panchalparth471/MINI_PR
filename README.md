@@ -21,11 +21,13 @@ It is an integrated solution designed to assist job seekers throughout the appli
 ### 3. **Resume Builder**
 - **User-Friendly Interface**: A React and Tailwind CSS frontend allows users to input their information seamlessly.
 - **Template Selection**: Users can choose from various templates to suit their preferences.
+- **ATS-Friendly**: Resumes are generated using LaTeX, ensuring they are optimized for Applicant Tracking Systems (ATS).
 - **PDF Generation**: The completed resume can be exported as a PDF, ready for job applications.
 
 ### 4. **Cover Letter Generator**
 - **AI-Powered Writing**: By analyzing the user's resume and the job description, GPT-4o crafts personalized cover letters.
 - **Customization Options**: Users can adjust the tone and content to match specific job requirements.
+- **ATS-Friendly**: Cover letters are also generated using LaTeX, ensuring they are ATS-compatible.
 - **Downloadable Output**: The generated cover letters can be downloaded in various formats.
 
 ---
@@ -45,6 +47,7 @@ It is an integrated solution designed to assist job seekers throughout the appli
 - **AI Services**:
   - **OpenAI GPT-4o**: For generating interview questions, quizzes, and cover letters.
   - **Deepgram API**: For speech-to-text and text-to-speech functionalities.
+- **Document Generation**: LaTeX for generating ATS-friendly resumes and cover letters.
 
 ---
 
@@ -63,9 +66,10 @@ It is an integrated solution designed to assist job seekers throughout the appli
 To set up the project locally:
 
 1. **Clone the Repository**:
-   ```bash
+   ```
    git clone https://github.com/Panchalparth471/MINI_PR.git
-Install Dependencies:
+
+2. **Install Dependencies**:
 
 ```
 cd MINI_PR/BackEnd
