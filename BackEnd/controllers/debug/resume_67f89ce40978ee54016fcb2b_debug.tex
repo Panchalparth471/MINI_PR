@@ -1,0 +1,97 @@
+\documentclass[10pt, letterpaper]{article}
+\usepackage[
+    ignoreheadfoot,
+    top=0.5cm,
+    bottom=0.5cm,
+    left=0.5cm,
+    right=0.5cm,
+    footskip=1.0cm
+]{geometry}
+\usepackage{titlesec, tabularx, array, xcolor, enumitem, fontawesome5, amsmath, hyperref, eso-pic, calc, bookmark, lastpage, changepage, paracol, ifthen, needspace, iftex}
+
+% Define colors
+\definecolor{primaryColor}{RGB}{0, 102, 204}
+
+% Use protective groups for pdfinfo to avoid & issues
+\hypersetup{
+    pdftitle={{asd's CV}},
+    pdfauthor={{asd}},
+    pdfcreator={{LaTeX with RenderCV}},
+    colorlinks=true,
+    urlcolor=primaryColor
+}
+
+\pagestyle{empty}
+\setcounter{secnumdepth}{0}
+\setlength{\parindent}{0pt}
+\setlength{\columnsep}{0cm}
+\setlist[itemize]{nosep}
+
+% Define missing environments if needed
+\newenvironment{onecolentry}{}{} % Fallback if not defined already
+\newenvironment{highlights}{\begin{itemize}}{\end{itemize}} % Fallback for highlights environment
+
+\titleformat{\section}{\needspace{4\baselineskip}\bfseries\large}{}{0pt}{}[\vspace{1pt}\titlerule]
+\titlespacing{\section}{-1pt}{0.3cm}{0.2cm}
+\titleformat{\subsection}{\bfseries\small}{}{0pt}{}{}
+\renewcommand{\normalsize}{\large}
+
+\begin{document}
+
+% Header
+\begin{center}
+    {\LARGE\bfseries asd}\\[5pt]
+    {\makebox[\textwidth][c]{%
+        \faEnvelope[regular] \href{mailto:zx@mail.con}{zx@mail.con} \quad
+        \faPhone* \href{tel:12}{12} \quad
+        
+    }}
+\end{center}
+
+% Education Section
+\section{Education}
+\begin{onecolentry}
+    \textbf{q} 
+    \textit{a, a}\\
+    \textbf{cgpa:} 5/10
+\end{onecolentry}
+
+\section{Additional Activities}
+\begin{onecolentry}
+    \begin{highlights}
+        \item \textbf{} () - 
+    \end{highlights}
+\end{onecolentry}
+
+% Skills Section
+\section{Skills}
+\textbf{Programming Languages:} as\\
+
+
+
+
+% Projects Section
+\section{Projects}
+\begin{onecolentry}
+    {\textbf{\large zx}}
+    \begin{itemize}
+        \item qw
+    \end{itemize}
+\end{onecolentry}
+\vspace{7pt}
+
+% Experience Section
+\section{Experience}
+\begin{onecolentry}
+    \textbf{} \hfill  | 
+\end{onecolentry}
+
+% Achievements Section
+\section{Achievements}
+\begin{onecolentry}
+    \begin{itemize}
+        \item 
+    \end{itemize}
+\end{onecolentry}
+
+\end{document}
